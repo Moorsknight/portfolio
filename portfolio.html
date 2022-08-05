@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang=zxx>
+<head>
+	<title>Hajjej Hazem, Mon Portoflio</title>
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript"></script>-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Latest compiled and minified CSS -->
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!--
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-idNH3UIOiZbCf8jxqu4iExnH34y5UovfW/Mg8T5WfNvoJolDvknoNqR69V2OexgF" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	Optional theme 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	Latest compiled and minified JavaScript
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/2de2e2de57.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+	#navigation li a.active
+	{
+	color: #ffffff;
+	background:#f1d74c;
+   }
+	.navbar
+	{
+  padding-top:3%;
+  position: fixed;
+  width:100%;
+  top:0;
+  left:0;
+  transition: 0.4s;
+  z-index:1;
+}
+ .scrolled
+   {
+   	 background-color: white !important;
+   	 padding-top:0;
+     transition: 0.4s;
+   }
+main div:nth-child(2) div section
+{
+	padding-top:15%;
+}
+.progress-bar
+{
+	background-color: #303030 !important;
+	}
+	.html::after
+	{
+	content:"80%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:75%;
+    }
+    .js::after
+	{
+	content:"80%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:75%;
+    }
+    .php::after
+	{
+	content:"75%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:70%;
+    }
+    .wp::after
+	{
+	content:"65%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:60%;
+    }
+    .gd::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:55%;
+    }
+
+   div + h3
+    {
+    	font-size:smaller;
+    }
+    .bottomchevron
+    {
+    	position:fixed;
+    	right:5%;
+    	bottom:3%;
+    	
+    }
+    .bg
+    {
+    	position:fixed;
+    	top:35%;
+    	border:1px solid #303030;
+    	padding:10px;
+    	border-radius: 0 4px 4px 0;
+    	background-color: #303030;
+    }
+    i.fa-cog
+    {
+    	font-size:30px;
+    	color:white;
+    	animation: rotation 2s infinite linear;
+    }
+    @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+
+	}
+	</style>
+
+</head>
+	<body>
+	<header id="header">
+		<nav class="navbar navbar-expand-lg" style="background-color:#F5F5F5">
+			<div class="collapse navbar-collapse" id="navigation" id="navbarColor01">	
+		        <ul class="navbar-nav ml-auto">
+		        	<li class="nav-item p-3">
+	                	<a class="nav-link text-dark" href="#header">Home <span class="sr-only">(current)</span></a>
+	                </li>
+	                <li class="nav-item p-3">
+	                	<a class="nav-link text-dark" href="#about">About</a>
+	                </li>
+	                <li class="nav-item p-3">
+	                	<a class="nav-link text-dark" href="#header">Portfolio</a>
+	                </li>
+	      			<li class="nav-item p-3">
+	        		<a class="nav-link text-dark" href="#Services">Services</a>
+	      			</li>
+	      			<li class="nav-item p-3">
+	        		<a class="nav-link text-dark" href="#Blog">Blog</a>
+	      			</li>
+	      			<li class="nav-item p-3">
+	        		<a class="nav-link text-dark" href="#footer">Contact</a>
+	      			</li>
+	    		</ul>
+  		    </div>
+	    </nav>
+	</header>
+	<main>
+		<div class="bg">
+		<i class="fas fa-cog"></i>
+		</div>
+		<div style="background-color: #F5F5F5">
+			<div class="container mx-auto">
+				<section class="row mx-auto">
+					<article class="col-12 col-sm-6 my-auto"><strong>Hello there! I am</strong>
+						<h1>Hajjej Hazem</h1>
+					</article>
+					<article class="col-12 col-sm-6"><img src="images/me.png" class="img-fluid mx-auto d-block"/>
+						
+					</article>
+				</section>
+			</div>
+		</div>
+		<section class="container mx-auto pb-5" id="about">
+			<div class="row pt-5">
+			<article class="col-12 col-sm-6 my-auto pb-5 pb-sm-0"><strong>Few Words</strong>
+			<h2>About me</h2>
+			<p>I am a selftaught person, I am fond of web developpement and recently I started auto learning the mentionned technologies:HTML5,CSS3,JS,jquery,bootstrap,wordpress,SQL,PHP
+			<br><br>	
+			I realised tow websites, the first is an overlay that works with API from another website: my overlay link is: <a href="http://aoe2overlay.22web.org/">http://aoe2overlay.22web.org/</a>and the API's website link is: <a href="https://www.aoe2.net">www.aoe2.net</a>.In order to try my overlay you can input the profile id 1509177</p>
+			<button type="button" class="btn btn-light">HIRE ME</button>
+			<a href="portfolio.pdf" download><button type="button" class="btn btn-dark">DOWNLOAD MY CV</button></a>
+			</article>
+			<article class="col-12 col-sm-6 my-auto">
+				<div class="row">
+					<div class="col-12">
+						<h3>Personal Information</h3>
+					</div>
+					<div class="col-6">
+						<small>
+							<p><strong>Full Name :</strong> Hajjej Hazem</p>
+	                        <p><strong>Date of Birth :</strong> 15 January 1986</p>
+	                        <p><strong>Age : </strong>34 Years Old</p>
+	                        <p><strong>Blood Group : </strong>O+</p>
+                    	</small>
+					</div>
+					<div class="col-6">
+						<address>
+							<small >
+								<p><strong>Phone :</strong><a href="tel:+0021652344555" class="text-dark"> +0021652344555</a></p>
+		                        <p><strong>Skype :</strong> hajjejhazem</p>
+		                        <p><strong>Email : </strong><a href="mailto:hajjejhazem7@hotmail.com" class="text-dark"></a>hajjejhazem7@hotmail.com</p>
+		                        <p><strong>website : </strong><a href="elmarchi.online" class="text-dark">elmarchi.online</a></p>
+		                    </small>
+                       	</address>
+						</div>
+					</div>		
+			</article>
+		</section>
+		<div style="background-color: #F5F5F5">
+			<div class="container mx-auto">
+				<section class="row mx-auto pt-5">
+					<div class="col-12 pb-4">
+						<h2>My skills</h2>
+					</div>
+					<article class="col-12 col-sm-4">
+						<div class="html"></div>
+							<h3>HTML & CSS</h3>
+						<div class="progress mb-5">
+							<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+						<div class="js"></div>
+							<h3>Javascript</h3>
+						<div class="progress mb-5">
+							<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						  	</div>
+						</div>
+					</article>
+					<article class="col-12 col-sm-4">
+						<div class="php"></div>
+							<h3>PHP</h3>
+						<div class="progress mb-5">
+							<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						  	</div>
+						</div>
+						<div class="wp"></div>
+							<h3>Wordpress</h3>
+						<div class="progress mb-5">
+							<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						  	</div>
+						</div>
+					</article>
+					<article class="col-12 col-sm-4 align-self-center">
+						<div class="gd"></div>
+							<h3>SQL</h3>
+						<div class="progress">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						
+					</article>
+					
+				</section>
+			</div>
+		</div>
+		
+	</main>
+	<footer class="container mx-auto" id="footer">
+		<h3 class="text-center py-5">Lets start a project, Contact me</h3>
+			<form> 
+				<div class="form-group row mx-5">
+					<div class="col-12 col-sm-6 mb-5 mb-sm-0">
+						<input class="form-control pl-0" type="text" placeholder="Your Name (required)" required>
+					</div>
+					<div class="col-12 col-sm-6">
+						<input class="form-control pl-0" type="text" placeholder="Your Email (required)" required>
+					</div>
+					<div class="col-12 mt-5">
+						<label for="exampleFormControlTextarea1" class="text-muted">Message here (required)</label>
+						<textarea class="form-control"id="exampleFormControlTextarea1" name="content" rows="5" required></textarea>
+					</div>
+					<div class="col-2 mx-auto">
+						<button type="submit" class="btn btn-dark mt-5">SEND MESSAGE</button>
+					</div>
+				</div>
+			</form>
+			<a href="#header"><button type="button" class="bottomchevron btn btn-dark"><i class="fas fa-chevron-up"></i></button></a>
+			
+
+<div class="text-right py-5">
+	<a class="fb-ic mr-3" role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
+<a class="tw-ic mr-3" role="button"><i class="fab fa-lg fa-twitter"></i></a>
+
+<a class="gplus-ic mr-3" role="button"><i class="fab fa-lg fa-google-plus-g"></i></a>
+
+<a class="li-ic mr-3" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a>
+
+<a class="ins-ic mr-3" role="button"><i class="fab fa-lg fa-instagram"></i></a>
+
+<a class="pin-ic mr-3" role="button"><i class="fab fa-lg fa-pinterest"></i></a>
+
+<a class="vk-ic mr-3" role="button"><i class="fab fa-lg fa-vk"></i></a>
+
+<a class="so-ic mr-3" role="button"><i class="fab fa-lg fa-stack-overflow"></i></a>
+
+<a class="yt-ic mr-3" role="button"><i class="fab fa-lg fa-youtube"></i></a>
+
+<a class="slack-ic mr-3" role="button"><i class="fab fa-lg fa-slack-hash"></i></a>
+
+<a class="git-ic mr-3" role="button"><i class="fab fa-lg fa-github"></i></a>
+
+<a class="comm-ic mr-3" role="button"><i class="fas fa-lg fa-comments"></i></a>
+
+<a class="email-ic mr-3" role="button"><i class="far fa-lg fa-envelope"></i></a>
+
+<a class="dribbble-ic mr-3" role="button"><i class="fab fa-lg fa-dribbble"></i></a>
+
+<a class="reddit-ic mr-3" role="button"><i class="fab fa-lg fa-reddit-alien"></i></a>
+
+<a class="whatsapp-ic" role="button"><i class="fab fa-lg fa-whatsapp"></i></a>
+</div>
+	</footer>
+	<script>
+	$(function() {
+    var header = $(".navbar");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+		</script>
+	</body>
+</html>
