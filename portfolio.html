@@ -49,10 +49,11 @@ main div:nth-child(2) div section
 {
 	padding-top:15%;
 }
-.progress-bar
+/*.progress-bar
 {
 	background-color: #303030 !important;
 	}
+	*/
 	.html::after
 	{
 	content:"80%";
@@ -63,7 +64,7 @@ main div:nth-child(2) div section
     padding: 10px 5px;
 	border-radius:50%;
 	position:relative;
-	left:75%;
+	left: var(--check-position);
     }
     .js::after
 	{
@@ -75,7 +76,7 @@ main div:nth-child(2) div section
     padding: 10px 5px;
 	border-radius:50%;
 	position:relative;
-	left:75%;
+	left:var(--check-position);
     }
     .php::after
 	{
@@ -87,7 +88,7 @@ main div:nth-child(2) div section
     padding: 10px 5px;
 	border-radius:50%;
 	position:relative;
-	left:70%;
+	left:var(--check-position);
     }
     .wp::after
 	{
@@ -99,9 +100,21 @@ main div:nth-child(2) div section
     padding: 10px 5px;
 	border-radius:50%;
 	position:relative;
-	left:60%;
+	left:var(--check-position);
     }
     .gd::after
+	{
+	content:"70%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
+    }
+	.jq::after
 	{
 	content:"60%";
 	font-size: smaller;
@@ -111,7 +124,79 @@ main div:nth-child(2) div section
     padding: 10px 5px;
 	border-radius:50%;
 	position:relative;
-	left:55%;
+	left:var(--check-position);
+    }
+	.re::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
+    }
+	.bs::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
+    }
+	.aj::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
+    }
+	.ex::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
+    }
+	.nd::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
+    }
+	.md::after
+	{
+	content:"60%";
+	font-size: smaller;
+	color:white;
+    border:1px solid #303030;
+    background-color: #303030;
+    padding: 10px 5px;
+	border-radius:50%;
+	position:relative;
+	left:var(--check-position);
     }
 
    div + h3
@@ -134,6 +219,7 @@ main div:nth-child(2) div section
     	border-radius: 0 4px 4px 0;
     	background-color: #303030;
     }
+	
     i.fa-cog
     {
     	font-size:30px;
@@ -199,11 +285,11 @@ main div:nth-child(2) div section
 			<div class="row pt-5">
 			<article class="col-12 col-sm-6 my-auto pb-5 pb-sm-0"><strong>Few Words</strong>
 			<h2>About me</h2>
-			<p>I am a selftaught person, I am fond of web developpement and recently I started auto learning the mentionned technologies:HTML5,CSS3,JS,jquery,bootstrap,wordpress,SQL,PHP
+			<p style="overflow-wrap: break-word;">I am a selftaught person, I am fond of web developpement and recently I started auto learning the mentionned technologies: HTML5, CSS3, JS, jquery, bootstrap, wordpress, SQL, PHP
 			<br><br>	
 			I realised tow websites, the first is an overlay that works with API from another website: my overlay link is: <a href="http://aoe2overlay.22web.org/">http://aoe2overlay.22web.org/</a>and the API's website link is: <a href="https://www.aoe2.net">www.aoe2.net</a>.In order to try my overlay you can input the profile id 1509177</p>
 			<button type="button" class="btn btn-light">HIRE ME</button>
-			<a href="portfolio.pdf" download><button type="button" class="btn btn-dark">DOWNLOAD MY CV</button></a>
+			<a href="cvhazem.pdf" download><button type="button" class="btn btn-dark">DOWNLOAD MY CV</button></a>
 			</article>
 			<article class="col-12 col-sm-6 my-auto">
 				<div class="row">
@@ -214,7 +300,7 @@ main div:nth-child(2) div section
 						<small>
 							<p><strong>Full Name :</strong> Hajjej Hazem</p>
 	                        <p><strong>Date of Birth :</strong> 15 January 1986</p>
-	                        <p><strong>Age : </strong>34 Years Old</p>
+	                        <p class="age"><strong>Age : </strong>34 Years Old</p>
 	                        <p><strong>Blood Group : </strong>O+</p>
                     	</small>
 					</div>
@@ -231,7 +317,7 @@ main div:nth-child(2) div section
 					</div>		
 			</article>
 		</section>
-		<div style="background-color: #F5F5F5">
+		<div class="progressbarcontainer" style="background-color: #F5F5F5">
 			<div class="container mx-auto">
 				<section class="row mx-auto pt-5">
 					<div class="col-12 pb-4">
@@ -241,7 +327,7 @@ main div:nth-child(2) div section
 						<div class="html"></div>
 							<h3>HTML & CSS</h3>
 						<div class="progress mb-5">
-							<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							<div class="text-right progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 							</div>
 						</div>
 						<div class="js"></div>
@@ -265,11 +351,69 @@ main div:nth-child(2) div section
 						  	</div>
 						</div>
 					</article>
-					<article class="col-12 col-sm-4 align-self-center">
+					<article class="col-12 col-sm-4">
 						<div class="gd"></div>
 							<h3>SQL</h3>
-						<div class="progress">
+						<div class="progress mb-5">
 						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						<div class="jq"></div>
+							<h3>Jquery</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						
+					</article>
+					<article class="col-12 col-sm-4">
+						<div class="bs"></div>
+							<h3>Bootstrap</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						<div class="re"></div>
+							<h3>React</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						
+					</article>
+					<article class="col-12 col-sm-4">
+						<div class="ex"></div>
+							<h3>Express</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						<div class="nd"></div>
+							<h3>Node.js</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						
+					</article>
+					<article class="col-12 col-sm-4">
+						<div class="aj"></div>
+							<h3>AJAX</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							</div>
+							
+						</div>
+						<div class="md"></div>
+							<h3>Mongodb</h3>
+						<div class="progress mb-5">
+						  	<div class="text-right progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 							</div>
 							
 						</div>
@@ -312,7 +456,7 @@ main div:nth-child(2) div section
 <a class="li-ic mr-3" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a>
 
 <a class="ins-ic mr-3" role="button"><i class="fab fa-lg fa-instagram"></i></a>
-
+<!--
 <a class="pin-ic mr-3" role="button"><i class="fab fa-lg fa-pinterest"></i></a>
 
 <a class="vk-ic mr-3" role="button"><i class="fab fa-lg fa-vk"></i></a>
@@ -333,23 +477,270 @@ main div:nth-child(2) div section
 
 <a class="reddit-ic mr-3" role="button"><i class="fab fa-lg fa-reddit-alien"></i></a>
 
-<a class="whatsapp-ic" role="button"><i class="fab fa-lg fa-whatsapp"></i></a>
+<a class="whatsapp-ic" role="button"><i class="fab fa-lg fa-whatsapp"></i></a>-->
 </div>
 	</footer>
 	<script>
 	$(function() {
-    var header = $(".navbar");
-  
-    $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-            header.addClass("scrolled");
-        } else {
-            header.removeClass("scrolled");
-        }
-    });
-  
-});
+		var header = $(".navbar");
+
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 50) {
+				header.addClass("scrolled");
+			} else {
+				header.removeClass("scrolled");
+			}
+		});
+
+	});
+
+	function onScrollReloadBars() {
+		let i = 1;
+		let htmlcounter = 1;
+		let jscounter = 1;
+		let phpcounter = 1;
+		let wpcounter = 1;
+		let gdcounter = 1;
+		let ajcounter = 1;
+		let bscounter = 1;
+		let ndcounter = 1;
+		let excounter = 1;
+		let recounter = 1;
+		let jqcounter = 1;
+		let mdcounter = 1;
+		console.log($('.progress-bar'))
+		let init = [];
+		var html = document.querySelector('.html')
+		var js = document.querySelector('.js')
+		var php = document.querySelector('.php')
+		var gd = document.querySelector('.gd')
+		var wp = document.querySelector('.wp')
+		var jq = document.querySelector('.jq')
+		var aj = document.querySelector('.aj')
+		var bs = document.querySelector('.bs')
+		var re = document.querySelector('.re')
+		var ex = document.querySelector('.ex')
+		var nd = document.querySelector('.nd')
+		var md = document.querySelector('.md')
+		console.log(html);
+		// var htmlafter=window.getComputedStyle(html,'::after')
+		// var jsafter=window.getComputedStyle(js,'::after')
+		// var phpafter=window.getComputedStyle(php,'::after')
+		// var wpafter=window.getComputedStyle(wp,'::after')
+		// var gdafter=window.getComputedStyle(gd,'::after')
+
+		// console.log(jsafter)
+		// var htmlleft=parseInt(htmlafter.left);
+		// var jsleft=parseInt(jsafter.left);
+		// var phpleft=parseInt(phpafter.left);
+		// var wpleft=parseInt(wpafter.left);
+		// var gdleft=parseInt(gdafter.left);
+		// console.log(htmlleft)
+		// console.log(jsleft)
+		// console.log(phpleft)
+		// console.log(wpleft)
+		// console.log(gdleft)
+		for (let j = 0; j < $('.progress-bar').length; j++) {
+
+
+			init.push($('.progress-bar')[j].offsetWidth)
+		}
+
+		console.log(init)
+
+
+		for (let j = 0; j < init.length; j++) {
+			document.querySelectorAll('.progress-bar')[j].style.width = '0px';
+			setTimeout(() => {
+				let interval;
+				interval = setInterval(() => {
+					if (htmlcounter * 1 <= 230) {
+
+
+						html.style.setProperty("--check-position", htmlcounter * 1 + 'px');
+
+						htmlcounter++;
+					}
+
+					if (jscounter * 1 <= 230) {
+
+
+						js.style.setProperty("--check-position", jscounter * 1 + 'px');
+
+						jscounter++;
+					}
+
+					if (phpcounter * 1 <= 220) {
+
+
+						php.style.setProperty("--check-position", phpcounter * 1 + 'px');
+
+						phpcounter++;
+					}
+
+					if (wpcounter * 1 <= 188) {
+
+
+						wp.style.setProperty("--check-position", wpcounter * 1 + 'px');
+
+						wpcounter++;
+					}
+
+
+					if (gdcounter * 1 <= 200) {
+
+
+						gd.style.setProperty("--check-position", gdcounter * 1 + 'px');
+
+						gdcounter++;
+					}
+
+
+					if (jqcounter * 1 <= 188) {
+
+
+						jq.style.setProperty("--check-position", jqcounter * 1 + 'px');
+
+						jqcounter++;
+
+					}
+					if (ajcounter * 1 <= 188) {
+
+
+						aj.style.setProperty("--check-position", ajcounter * 1 + 'px');
+
+						ajcounter++;
+					}
+					if (recounter * 1 <= 188) {
+
+
+						re.style.setProperty("--check-position", recounter * 1 + 'px');
+
+						recounter++;
+					}
+					if (bscounter * 1 <= 188) {
+
+
+						bs.style.setProperty("--check-position", bscounter * 1 + 'px');
+
+						bscounter++;
+					}
+
+					if (ndcounter * 1 <= 188) {
+
+
+						nd.style.setProperty("--check-position", ndcounter * 1 + 'px');
+
+						ndcounter++;
+					}
+					if (excounter * 1 <= 188) {
+
+
+						ex.style.setProperty("--check-position", excounter * 1 + 'px');
+
+						excounter++;
+					}
+
+					if (mdcounter * 1 <= 188) {
+
+
+						md.style.setProperty("--check-position", mdcounter * 1 + 'px');
+
+						mdcounter++;
+					}
+
+
+
+
+
+
+
+
+
+
+
+
+
+					if (i * 1 <= init[j]) {
+
+						//console.log($('.progress-bar').css('width'))
+						// console.log(parseInt($('.progress-bar').css('width')))
+						// console.log(i*1,parseInt($('.progress-bar').css('width')))
+						document.querySelectorAll('.progress-bar')[j].style.width = i * 1 + 'px'
+
+
+
+						i++;
+						//console.log(i)
+					}
+				}, 20);
+
+			}, 1000);
+
+		}
+
+	}
+
+	onScrollReloadBars()
+	var callback = function(entries, observer) {
+		//////console.log(seenmsg)
+		entries.forEach(entry => {
+
+
+
+
+			if (entry.isIntersecting === true) {
+
+				console.log('intersec tion')
+				onScrollReloadBars()
+
+
+
+
+			}
+		})
+	}
+	var observer = new IntersectionObserver(callback, options);
+	var target = document.querySelector('.progressbarcontainer');
+	observer.observe(target);
+
+
+
+	var options = {
+		root: document.querySelector('body'),
+		rootMargin: '0px',
+		threshold: 1.0
+	}
+
+
+	///Calculate age dynamically///
+
+
+
+
+	var dob = new Date("01/15/1986");
+	//calculate month difference from current date in time  
+	var month_diff = Date.now() - dob.getTime();
+
+	//convert the calculated difference in date format  
+	var age_dt = new Date(month_diff);
+
+	//extract year from date      
+	var year = age_dt.getUTCFullYear();
+
+	//now calculate the age of the user  
+	var age = Math.abs(year - 1970);
+
+	//display the calculated age  
+	//34 Years Old
+
+
+	console.log(document.querySelector('.age'));
+
+	document.querySelector('.age').childNodes[1].nodeValue = age + " Years Old";
+                                
+							
 		</script>
 	</body>
 </html>
