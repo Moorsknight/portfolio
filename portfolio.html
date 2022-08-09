@@ -235,6 +235,11 @@ main div:nth-child(2) div section
   }
 
 	}
+	.active{
+background-color: #f1d74c;
+border-radius: 16px;
+
+	}
 	</style>
 
 </head>
@@ -481,6 +486,34 @@ main div:nth-child(2) div section
 </div>
 	</footer>
 	<script>
+
+
+$('.nav-item').on('click',function(e){
+if($('.active')!=null){
+
+	$('.active').removeClass('active');
+
+
+e.target.classList.add('active');
+}
+
+else{
+
+
+	e.target.classList.add('active');
+}
+
+
+
+
+
+})
+
+
+
+
+
+
 	$(function() {
 		var header = $(".navbar");
 
